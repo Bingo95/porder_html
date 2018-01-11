@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/pub.css" />
+		<link rel="stylesheet" type="text/css" href="css/p_orderprodsearch_css.css" />
+		<link rel="stylesheet" type="text/css" href="css/p_prod_panel.css" />
+	</head>
+
+	<body>
+
+		<!-- 容器 -->
+		<div class="weui-tab">
+			<a href="javascript:overlay1();">
+				<div id="overlay" class="weui-popup__overlay weui-popup__overlay_add"></div>
+			</a>
+			<!--nav-->
+			<div class="weui-navbar posit_flix">
+				<div class="weui-flex prod_nav">
+					<div class="weui-flex__item">
+						<a id="left-panel-link" href="#left-panel">
+							<div class="prod_nav_text">
+								<img src="img/ljt.png" class="prod_nav_img" />
+								<label class="prod_nav_name">你好你好</label>
+							</div>
+						</a>
+					</div>
+					<div class="weui-flex__item">
+						<div class="prod_nav_title">宁波******公司公司</div>
+					</div>
+				</div>
+			</div>
+			<div class="prod_search_box">
+				<div class="prod_search_box_mag">
+					<div class="weui-search-bar" id="searchBar">
+						<form class="weui-search-bar__form">
+							<div class="weui-search-bar__box">
+								<i class="weui-icon-search"></i>
+								<input type="search" class="weui-search-bar__input" id="searchInput" placeholder="输入你要查找的商品" required="">
+								<a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+							</div>
+							<label class="weui-search-bar__label" id="searchText">
+      								<i class="weui-icon-search"></i>
+     								<span>输入你要查找的商品</span>
+    							</label>
+						</form>
+						<a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+					</div>
+				</div>
+				<div class="prod_search_shop">
+					<label>5</label>
+				</div>
+			</div>
+			<!--content-->
+			<div class="weui-tab__bd">
+				<div class="weui-tab__bd-item weui-tab__bd-item--active prod_page_mag">
+					<div id="list" class="wrap">
+						<ul id="search_list" class="page_left">
+							<li class="active">系是是是信息信</li>
+							<li>系信息信信息信</li>
+							<li>系列信息</li>
+							<li>系列信息</li>
+							<li>信信息</li>
+							<li>信信息</li>
+							<li>信信息</li>
+							<li>信信息</li>
+							<li>信信息</li>
+							<li>信信息</li>
+							<li>信信息</li>
+							<li>信信息</li>
+							<li>到底了</li>
+						</ul>
+					</div>
+					<div class="page_right">
+						<div class="right_div">
+							<div>
+								<div class="prod_cont_box">
+									<a class='open-popup' data-target='#detail_from'>
+										<div class="weui-flex">
+											<div class="weui-flex__item text_align_center">
+												<div class="prod_cont_imgbox">
+													<img src="http://img3.redocn.com/tupian/20150430/mantenghuawenmodianshiliangbeijing_3924704.jpg" class="prod_cont_img" />
+												</div>
+											</div>
+										</div>
+										<div class="weui-flex">
+											<div class="prod_cont_name">
+												<label>aaaaaaaaaaaaaaaaaaaa</label>
+											</div>
+										</div>
+										<div class="weui-flex mag_top_0 float_rt">
+											<div class="text_color_red text_size_12">
+												<label>￥4444.00/个</label>
+											</div>
+										</div>
+									</a>
+								</div>
+
+							</div>
+							<div class="cont_dispy_none">没有了...</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--next-->
+		<div id="detail_from" class="weui-popup__container popup-bottom">
+			<a href="javascript:;" class="picker-button close-popup">
+				<div class="weui-popup__overlay"></div>
+			</a>
+			<div class="weui-popup__modal">
+				<div class="prod_next_span">
+					<div class="weui-flex">
+						<div class="weui-flex__item mag_lt_10p">
+							<span>商品名称:</span>
+							<div class="prod_next_name">
+								<label>asass放松放松放松贷放松放松</label>
+							</div>
+						</div>
+					</div>
+					<div class="weui-flex">
+						<div class="weui-flex__item mag_lt_10p">
+							<span>商品描述:</span>
+							<div class="prod_next_depict">
+								<label>asass放松放松贷放松放松贷放松放松放松放松贷放松放松贷放松放松放松放松贷放松放松贷放松放松放松放松贷放松放松贷放松放松</label>
+							</div>
+						</div>
+					</div>
+					<div class="weui-flex mag_top_dow10 mag_btm_5p">
+						<div class="weui-flex__item mag_lt_10p">
+							<span>单价:</span>
+							<label>1111.00</label>
+							<span>元/个</span>
+						</div>
+						<div class="weui-flex__item">
+							<div class="float_lt">
+								<span>数量:</span>
+							</div>
+							<div class="text_align_center">
+								<label class="btn_minus">-</label>
+								<input id="" type="number" pattern="[0-9]*" value="1" class="prod_next_num" />
+								<label class="btn_add">+</label>
+							</div>
+						</div>
+					</div>
+					<div class="weui-flex mag_btm_10p">
+						<div class="weui-flex__item mag_lt_10p">
+							<span>金额:</span>
+							<label>1111.00</label>
+							<span>元</span>
+						</div>
+					</div>
+					<div class="weui-form-preview__ft">
+						<a id="" class="weui-form-preview__btn weui-form-preview__btn_default btn_end" href="p_ordercart.html">立即下单</a>
+						<a id="" class="weui-form-preview__btn weui-form-preview__btn_primary btn_addone">加入销售车</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--left panel-->
+		<div id="left-panel" class="left_panel-box">
+			<div class="weui-flex">
+				<div class="weui-flex__item left_panel_userbox">
+					<div class="left_panel_headbox">
+						<img src="http://img3.redocn.com/tupian/20150430/mantenghuawenmodianshiliangbeijing_3924704.jpg" class="left_panel_head" />
+					</div>
+					<div class="left_panel_username">
+						<label>你好你好你好你你好你你好你你好你你好你</label>
+					</div>
+				</div>
+			</div>
+			<div class="weui-flex">
+				<ul>
+					<li>订单列表</li>
+					<li>订货人员</li>
+					<li>加订货人</li>
+					<li id="panel_close">隐藏目录</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<!--jquery+weui-->
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-weui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.panelslider.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/p_orderprodsearch_js.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

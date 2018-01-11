@@ -1,0 +1,211 @@
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>订货车</title>
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/pub.css" />
+		<link rel="stylesheet" type="text/css" href="css/p_ordercart_style.css" />
+	</head>
+
+	<body>
+		<!--tab-->
+		<div class="weui-tab">
+			<!--nav-->
+			<div class="weui-navbar merchant_nav_fixed">
+				<div class="weui-flex width_all">
+					<div class="weui-flex__item">
+						<img class="merchant_nav_back" src="img/pub_back.png" />
+					</div>
+					<div class="weui-flex__item">
+						<a id="shop_empty" class="shop_empty_text">清空</a>
+					</div>
+				</div>
+			</div>
+			<!--list-->
+			<div class="weui-tab__bd">
+				<div class="weui-tab__bd-item weui-tab__bd-item--active mag_top_up10">
+					<!--填充-->
+					<div class="shop_list_content shop_list_show">
+						<div class='weui-panel mag_top_0'>
+							<div class="weui-flex">
+								<div class="weui-flex__item text_size_15 mag_auto">
+									<label class="shop_list_del">X</label>
+								</div>
+								<div class="weui-flex__item mag_lt_5 text_size_15">
+									旦撒旦撒旦撒旦撒旦
+								
+								<div class="weui-flex__item shop_list_text_mag">
+									<div class="weui-flex text_justify_align shop_price_mag">
+										<label class="text_color_gray">单价:</label>
+										<div class="text_size_14">
+											<label class="text_color_black">111111.00</label>
+											<span class="text_color_gray">元/个</span>
+										</div>
+									</div>
+									<div class="weui-flex text_justify_align mag_top_dow10 shop_num_mag">
+										<div class="float_lt">
+											<label class="text_color_gray">数量:</label>
+										</div>
+										<div class="shop_input_num">
+											<span class="shop_btn_minus">-</span>
+											<input id="" type="number" pattern="[0-9]*" value="1" class="shop_input" />
+											<span class="shop_btn_add">+</span>
+										</div>
+									</div>
+									<div class="weui-flex mag_top_dow10 text_justify_align">
+										<label class="text_color_gray">金额:</label>
+										<div class="text_size_14">
+											<label class="text_color_black">1111.00</label>
+											<span class="text_color_gray">元</span>
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--tabbar-->
+			<div class="weui-tabbar">
+				<div class="weui-flex">
+					<div class="weui-flex__item mag_auto text_color_black">
+						<div class="shop_btn_next_cont mag_lt_5">
+							<label>总金额：</label>
+							<label>0</label>
+							<span class="text_color_gray text_size_13">元</span>
+						</div>
+					</div>
+				</div>
+				<span class="weui-tabbar__item"></span>
+				<div class="weui-form-preview__ft">
+					<a id="shop_next_from" class="weui-form-preview__btn weui-form-preview__btn_primary shop_btn_next">下一步（<span id="sum_list">0</span>）</a>
+				</div>
+			</div>
+		</div>
+		<!--next-->
+		<div id="shop_next_page" class="weui-popup__container">
+			<div class="weui-popup__overlay"></div>
+			<div class="weui-popup__modal">
+				<div class="weui-panel">
+					<div class="weui-media-box">
+						<div class="weui-flex">
+							<div class="weui-flex__item">
+								<label class="weui-form-preview__label">总金额：</label>
+								<div class="weui-form-preview__value "><span id="totalmoney">0</span><span class="text_color_gray text_size_13 text_mag_lt_add5">元</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="weui-cells weui-cells_form">
+						<div class="weui-cell">
+							<div class="weui-cell__hd">
+								<label class="weui-label text_color_gray">送货日期</label>
+							</div>
+							<div class="weui-cell__bd">
+								<input class="weui-input" id="senddate" type="text" readonly="">
+							</div>
+						</div>
+						<div class="weui-cell">
+							<div class="weui-cell__hd">
+								<label class="weui-label text_color_gray">收货地址</label>
+							</div>
+							<div class="weui-cell__bd">
+								<input id="" class="weui-input" type="text">
+							</div>
+						</div>
+						<div class="weui-cell">
+							<div class="weui-cell__hd">
+								<label class="weui-label text_color_gray">联系人</label>
+							</div>
+							<div class="weui-cell__bd">
+								<input id="" class="weui-input" type="text">
+							</div>
+						</div>
+						<div class="weui-cell">
+							<div class="weui-cell__hd">
+								<label class="weui-label text_color_gray">联系电话</label>
+							</div>
+							<div class="weui-cell__bd">
+								<input id="" class="weui-input" type="tel">
+							</div>
+						</div>
+						<div class="weui-cell">
+							<div class="weui-cell__hd">
+								<label class="weui-label text_color_gray">订货备注</label>
+							</div>
+							<div class="weui-cell__bd">
+								<input id="" class="weui-input" type="text" placeholder="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="weui-flex">
+					<div class="weui-flex__item padding_15">
+						<a id="save_all" class="weui-btn weui-btn_primary">保存</a>
+					</div>
+					<div class="weui-flex__item padding_15">
+						<a id="exit" class="weui-btn weui-btn_default close-popup">返回</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--jquery+weui-->
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-weui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			/*点击弹出下一步内容隐藏原内容*/
+			$("#shop_next_from").click(function() {
+				var input_all = $(".shop_conte_top");
+				/*if(input_all.length == 0) {
+					$.toast("请添加产品！", "cancel");
+				} else {*/
+				$("#shop_next_page").popup();
+				$(".weui-tab").hide();
+				/*}*/
+			});
+			/*关闭下一步内容显示原页面*/
+			$("#exit").click(function() {
+				$(".weui-tab").show();
+			});
+			/*时间选择器插件*/
+			$("#senddate").datetimePicker({
+				times: function() {
+					return;
+				},
+				value: now_time(),
+				min: now_time().substring(0, now_time().length - 3),
+				onChange: function(picker, values, displayValues) {
+					//console.log(values);
+				}
+			});
+
+			/*获取当前时间*/
+			function now_time() {
+				//为单数加个0
+				function day_zero(s) {
+					return s < 10 ? '0' + s : s;
+				}
+				var myDate = new Date();
+				//获取当前年
+				var year = myDate.getFullYear();
+				//获取当前月
+				var month = myDate.getMonth() + 1;
+				//获取当前日
+				var date = myDate.getDate();
+				//获取当前小时数(0-23)
+				var h = myDate.getHours();
+				//上午下午参数
+				var noon = " ";
+				/*当前时间*/
+				var now = year + '-' + day_zero(month) + "-" + day_zero(date) + " " + noon;
+				return now;
+			};
+		});
+	</script>
+
+</html>

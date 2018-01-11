@@ -1,0 +1,328 @@
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>客户列表</title>
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/pub.css" />
+		<link rel="stylesheet" type="text/css" href="css/p_ordercart_style.css" />
+	</head>
+
+	<body>
+		<!-- 容器 -->
+		<div class="weui-tab">
+			<!--nav-->
+			<div class="weui-navbar merchant_nav_fixed">
+				<div class="weui-flex width_all">
+					<div class="weui-flex__item">
+						<img class="merchant_nav_back" src="img/pub_back.png" />
+					</div>
+					<div class="weui-flex__item merchant_nav_title">
+						<label>主目录</label>
+					</div>
+				</div>
+			</div>
+			<!--search-->
+			<div class="merchant_search_style">
+				<div class="weui-cells">
+					<div class="weui-cell weui-cell_select">
+						<div class="weui-cell__hd text_size_13">
+							<select class="weui-select weui-select2">
+								<option value="1">价格1</option>
+								<option value="2">价格2</option>
+							</select>
+						</div>
+						<div class="weui-search-bar merchant_search_style_e uctlict_search_edit" id="searchBar">
+							<form class="weui-search-bar__form">
+								<div class="weui-search-bar__box">
+									<i class="weui-icon-search"></i>
+									<input type="search" class="weui-search-bar__input" id="searchInput" placeholder="输入你要查找的商品" required="">
+									<a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+								</div>
+								<label class="weui-search-bar__label" id="searchText">
+      								<i class="weui-icon-search"></i>
+     								<span>输入你要查找的客户</span>
+    							</label>
+							</form>
+							<a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!--content-->
+			<div class="weui-tab__bd text_size_14 merchant_cont_top">
+				<div class="weui-tab__bd-item weui-tab__bd-item--active">
+					<div class="weui-panel merchant_cont">
+						<div class="onclisk">
+							<div class="weui-flex">
+								<div class="weui-flex__item">
+									<label>宁有限公司</label>
+								</div>
+								<div class="text_size_13">
+									<label>2017-05-01 11:12:35</label>
+								</div>
+							</div>
+							<div class="merchant_cont_text">
+								<div class="weui-flex">
+									<div class="weui-flex__item">
+										<label>联系地址:</label>
+									</div>
+									<div class="weui-flex__item merchant_cont_site">
+										<label>宁波宁波宁波宁波宁波波</label>
+									</div>
+								</div>
+								<div class="weui-flex">
+									<div class="weui-flex__item">
+										<label class="float_lt">联系人:</label>
+										<div class="float_lt merchant_cont_human">
+											<label>12856998745</label>
+											<label>张三</label>
+										</div>
+										<label class="float_rt merchant_cont_log">未审核</label>
+									</div>
+								</div>
+								<div class="weui-flex">
+									<div class="weui-flex__item">
+										<label>定价类别:</label>
+										<label class="merchant_cont_rate">价格1</label>
+									</div>
+								</div>
+								<div class="weui-flex">
+									<div class="weui-flex__item">
+										<label>备注:</label>
+										<label class="merchant_cont_rate"></label>
+									</div>
+								</div>
+								<div class="weui-flex mag_top_5">
+									<img src="img/ljt.png" class="merchant_cont_user_img" />
+									<div class="weui-flex__item">
+										<label>你好你好你好好你好好你好好你好你好你好你好</label>
+										
+									</div>
+									<label class="float_rt">2017-07-08 09:10:15</label>
+								</div>
+								<div class="weui-flex mag_top_5">
+									<img src="img/ljt.png" class="merchant_cont_user_img" />
+									<div class="weui-flex__item">
+										<label>你好你好你好你好你好你好</label>
+										<label class="float_rt">2017-07-08 09:10:15</label>
+									</div>
+								</div>
+								<!--<div class="merchant_cont_user">
+									<div class="float_lt">
+										<img src="img/ljt.png" class="merchant_cont_user_img" />
+									</div>
+									<div class="merchant_cont_user_top">
+										<label>你好你好你好你好你好你好</label>
+										<div class="float_lt merchant_cont_user_top">
+											<label>2017-07-08 09:10:15</label>
+										</div>
+									</div>
+								</div>-->
+
+							</div>
+						</div>
+					</div>
+					<div class="weui-panel merchant_cont">
+						<div class="onclisk">
+							<div class="weui-flex">
+								<div class="weui-flex__item">
+									<label>宁有限公司</label>
+								</div>
+								<div class="text_size_13">
+									<label>2017-05-01 11:12:35</label>
+								</div>
+							</div>
+							<div class="merchant_cont_text">
+								<div class="weui-flex">
+									<div class="weui-flex__item">
+										<label>联系地址:</label>
+									</div>
+									<div class="weui-flex__item merchant_cont_site">
+										<label>宁波宁波宁波宁波宁波波</label>
+									</div>
+								</div>
+								<div class="weui-flex">
+									<div class="weui-flex__item">
+										<label class="float_lt">联系人:</label>
+										<div class="float_lt merchant_cont_human">
+											<label>12856998745</label>
+											<label>张三</label>
+										</div>
+										<label class="float_rt">不通过</label>
+									</div>
+								</div>
+								<div class="weui-flex">
+									<div class="weui-flex__item">
+										<label>定价类别:</label>
+										<label class="merchant_cont_rate">价格1</label>
+									</div>
+								</div>
+								<div class="merchant_cont_user">
+									<div class="float_lt">
+										<img src="img/ljt.png" class="merchant_cont_user_img" />
+									</div>
+									<div class="merchant_cont_user_top">
+										<label>你好你好你好你好你好你好</label>
+										<div class="float_lt merchant_cont_user_top">
+											<label>2017-07-08 09:10:15</label>
+										</div>
+									</div>
+								</div>
+								<div class="merchant_cont_user">
+									<div class="float_lt">
+										<img src="img/ljt.png" class="merchant_cont_user_img" />
+									</div>
+									<div class="merchant_cont_user_top">
+										<label>你好你好你好你好你好你好</label>
+										<div class="float_lt merchant_cont_user_top">
+											<label>2017-07-08 09:10:15</label>
+										</div>
+									</div>
+								</div>
+								<div class="merchant_cont_user">
+									<div class="float_lt">
+										<img src="img/ljt.png" class="merchant_cont_user_img" />
+									</div>
+									<div class="merchant_cont_user_top">
+										<label>你好你好你好你好你好你好</label>
+										<div class="float_lt merchant_cont_user_top">
+											<label>2017-07-08 09:10:15</label>
+										</div>
+									</div>
+								</div>
+								<div class="merchant_cont_user">
+									<div class="float_lt">
+										<img src="img/ljt.png" class="merchant_cont_user_img" />
+									</div>
+									<div class="merchant_cont_user_top">
+										<label>你好你好你好你好你好你好</label>
+										<div class="float_lt merchant_cont_user_top">
+											<label>2017-07-08 09:10:15</label>
+										</div>
+									</div>
+								</div>
+								<div class="merchant_cont_user">
+									<div class="float_lt">
+										<img src="img/ljt.png" class="merchant_cont_user_img" />
+									</div>
+									<div class="merchant_cont_user_top">
+										<label>你好你好你好你好你好你好</label>
+										<div class="float_lt merchant_cont_user_top">
+											<label>2017-07-08 09:10:15</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="weui-panel merchant_cont">
+						<div class="onclisk">
+							<div class="weui-flex">
+								<div class="weui-flex__item">
+									<label>宁有限公司</label>
+								</div>
+								<div class="text_size_13">
+									<label>2017-05-01 11:12:35</label>
+								</div>
+							</div>
+							<div class="merchant_cont_text">
+								<div class="weui-flex">
+									<div class="weui-flex__item">
+										<label>联系地址:</label>
+									</div>
+									<div class="weui-flex__item merchant_cont_site">
+										<label>宁波宁波宁波宁波宁波波</label>
+									</div>
+								</div>
+								<div class="weui-flex">
+									<div class="weui-flex__item">
+										<label class="float_lt">联系人:</label>
+										<div class="float_lt merchant_cont_human">
+											<label>12856998745</label>
+											<label>张三</label>
+										</div>
+										<label class="float_rt merchant_cont_success">通过</label>
+									</div>
+								</div>
+								<div class="weui-flex">
+									<div class="weui-flex__item">
+										<label>定价类别:</label>
+										<label class="merchant_cont_rate">价格1</label>
+									</div>
+								</div>
+								<div class="merchant_cont_user">
+									<div class="float_lt">
+										<img src="img/ljt.png" class="merchant_cont_user_img" />
+									</div>
+									<div class="merchant_cont_user_top">
+										<label>你好你好你好你好你好你好</label>
+										<div class="float_lt merchant_cont_user_top">
+											<label>2017-07-08 09:10:15</label>
+										</div>
+									</div>
+								</div>
+								<div class="merchant_cont_user">
+									<div class="float_lt">
+										<img src="img/ljt.png" class="merchant_cont_user_img" />
+									</div>
+									<div class="merchant_cont_user_top">
+										<label>你好你好你好你好你好你好</label>
+										<div class="float_lt merchant_cont_user_top">
+											<label>2017-07-08 09:10:15</label>
+										</div>
+									</div>
+								</div>
+								<div class="merchant_cont_user">
+									<div class="float_lt">
+										<img src="img/ljt.png" class="merchant_cont_user_img" />
+									</div>
+									<div class="merchant_cont_user_top">
+										<label>你好你好你好你好你好你好</label>
+										<div class="float_lt merchant_cont_user_top">
+											<label>2017-07-08 09:10:15</label>
+										</div>
+									</div>
+								</div>
+								<div class="merchant_cont_user">
+									<div class="float_lt">
+										<img src="img/ljt.png" class="merchant_cont_user_img" />
+									</div>
+									<div class="merchant_cont_user_top">
+										<label>你好你好你好你好你好你好</label>
+										<div class="float_lt merchant_cont_user_top">
+											<label>2017-07-08 09:10:15</label>
+										</div>
+									</div>
+								</div>
+								<div class="merchant_cont_user">
+									<div class="float_lt">
+										<img src="img/ljt.png" class="merchant_cont_user_img" />
+									</div>
+									<div class="merchant_cont_user_top">
+										<label>你好你好你好你好你好你好</label>
+										<div class="float_lt merchant_cont_user_top">
+											<label>2017-07-08 09:10:15</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--jquery+weui-->
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-weui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/p_ordercart_js.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	</script>
+
+</html>

@@ -1,0 +1,100 @@
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/pub.css"/>
+		<link rel="stylesheet" type="text/css" href="css/p_ordercart_style.css"/>
+	</head>
+	<style type="text/css">
+		.weui-cell:before {
+			left: 0px;
+		}
+	</style>
+
+	<body>
+		<!-- 容器 -->
+		<div class="weui-tab">
+			<!--nav-->
+			<div class="weui-navbar">
+				<div class="weui-flex width_all">
+					<div class="weui-flex__item">
+						<img class="merchant_nav_back" src="img/pub_back.png" />
+					</div>
+					<div class="weui-flex__item uctlist_nav_title">
+						<label>主目录</label>
+					</div>
+					<div class="weui-flex__item">
+						<a class="weui-btn weui-form-preview__btn pub_btn_add">新增</a>
+					</div>
+				</div>
+			</div>
+			<!--content-->
+			<div class="weui-tab__bd">
+				<div class="weui-tab__bd-item weui-tab__bd-item--active mag_top_up10">
+					<div class="weui-cells__title">公共配置</div>
+					<div class="weui-cells pub_cont_list">
+						<div class="weui-cell">
+							<div class="weui-cell__hd pub_cont_num">
+								<label>1</label>
+							</div>
+							<div class="weui-cell__bd">
+								<p>标题文字</p>
+							</div>
+							<div class="weui-cell__ft">
+								<a class="weui-btn weui-form-preview__btn pub_btn_edit">
+									修改
+								</a>
+							</div>
+							<div class="weui-cell__ft">
+								<a class="weui-btn weui-form-preview__btn pub_btn_del">
+									删除
+								</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="about" class="weui-popup__container popup-bottom">
+			<div class="weui-popup__overlay"></div>
+			<div class="weui-popup__modal">
+				<div class="weui-cells__title">
+					<label>新增品牌</label>
+				</div>
+				<div class="weui-cells weui-cells_form pub_about_box">
+					<div class="weui-cell pub_about_lt">
+						<div class="weui-cell__hd">
+							<label class="">名称：</label>
+						</div>
+						<div class="weui-cell__bd">
+							<input id="name" class="weui-input" type="text">
+						</div>
+					</div>
+					<div class="weui-cell pub_about_lt">
+						<div class="weui-cell__hd">
+							<label class="">排序：</label>
+						</div>
+						<div class="weui-cell__bd">
+							<input class="weui-input" type="text">
+						</div>
+					</div>
+				</div>
+				<div class="weui-form-preview__ft">
+					<a id="" class="weui-form-preview__btn weui-form-preview__btn_default pub_about_keep">保存</a>
+					<a id="" class="weui-form-preview__btn weui-form-preview__btn_primary close-popup pub_about_close">取消</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--jquery+weui-->
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-weui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/p_pubmenu_js.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
